@@ -2,20 +2,15 @@ name: napari-cistem-mtselector
 display_name: cisTEM Match Template Selector
 contributions:
   commands:
-    - id: napari-cistem-mtselector.make_qwidget
-      python_name: napari_cistem_mtselector._widget:ExampleQWidget
-      title: Make example QWidget
-    - id: napari-cistem-mtselector.make_magic_widget
-      python_name: napari_cistem_mtselector._widget:example_magic_widget
-      title: Make example magic widget
-    - id: napari-cistem-mtselector.make_func_widget
-      python_name: napari_cistem_mtselector._widget:example_function_widget
-      title: Make example function widget
+    - id: napari-cistem-mtselector.load_cistem_project_widget
+      python_name: napari_cistem_mtselector._widget:load_cistem_project
+      title: Make widget to load cisTEM project
+    - id: napari-cistem-mtselector.filter_matches_widget
+      python_name: napari_cistem_mtselector._widget:filter_matches
+      title: Make widget to filter matches
   widgets:
-    - command: napari-cistem-mtselector.make_qwidget
-      display_name: Example QWidget
-    - command: napari-cistem-mtselector.make_magic_widget
-      display_name: Example Magic Widget
-    - command: napari-cistem-mtselector.make_func_widget
-      autogenerate: true
-      display_name: Example Function Widget
+    - command: napari-cistem-mtselector.load_cistem_project_widget
+      display_name: Load cisTEM project
+    - command: napari-cistem-mtselector.filter_matches_widget
+      display_name: Filter cisTEM template matches
+

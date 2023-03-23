@@ -1,7 +1,7 @@
 __version__ = "0.0.1"
-from ._widget import ExampleQWidget, example_magic_widget
+from ._widget import load_cistem_project, filter_matches
 
 __all__ = (
-    "ExampleQWidget",
-    "example_magic_widget",
+    "load_cistem_project",
+    "filter_matches"
 )
